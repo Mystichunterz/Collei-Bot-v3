@@ -1,0 +1,26 @@
+/* -------------------------
+[File Information]
+Author: mystichunterz
+------------------------- */
+
+console.log("----------------------");
+console.log("index.js");
+console.log("----------------------");
+
+//----------------------
+//  imports
+//----------------------
+import Response from "../classes/Response.js"
+
+//----------------------
+//  main
+//----------------------
+class TBA extends Response {
+	aliases = [""]
+	cooldown = 5 * 1000
+	async run(message) {
+		message.reply(``)
+	}
+}
+
+export default TBA

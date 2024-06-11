@@ -1,0 +1,22 @@
+{
+  "name": "collei.v2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "type": "module",
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@discordjs/rest": "^2.3.0",
+    "canvas": "^2.11.2",
+    "discord-api-types": "^0.37.83",
+    "discord.js": "^14.2.0",
+    "dotenv": "^16.0.1",
+    "fs": "^0.0.1-security",
+    "node-fetch": "^3.3.2"
+  }
+}
