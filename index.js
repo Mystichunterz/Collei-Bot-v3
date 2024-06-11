@@ -15,11 +15,17 @@ import "dotenv/config";
 
 import Bot from "./classes/Bot.js";
 import { botConfig } from "./config/bot_config.js";
+import { logSuccess } from './utility/logging.js';
 
 //----------------------
 //  config
 //----------------------
 const prefixConfig = botConfig.prefix;
+
+//----------------------
+//  main
+//----------------------
+logSuccess("Bot is starting up!");
 
 const client = new Bot({
   intents: [

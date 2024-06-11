@@ -72,7 +72,7 @@ class SlashCommandsHandler {
         // Check if the guild is available and log the relevant properties for debugging
         const guildName = guild && guild.available ? guild.name : "Unknown Guild";
         if (guild) {
-            console.log(`Guild properties: id=${guild.id}, name=${guild.name}, available=${guild.available}`);
+            console.log(`Guild properties: id = ${guild.id}, name = ${guild.name}, available = ${guild.available}`);
         } else {
             console.log(`Guild is not found or is unavailable.`);
         }

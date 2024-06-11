@@ -2,6 +2,8 @@ import Response from "../../classes/Response.js";
 
 class colleiProphecy extends Response {
   aliases = ["prophecy"];
+  accessLevel = 3;
+
   async run(message) {
     let comedicTiming = async (ms) =>
       await new Promise((r) => setTimeout(r, ms));

@@ -8,6 +8,16 @@ console.log("utility > logging.js");
 console.log("----------------------");
 
 //----------------------
+// imports
+//----------------------
+import channelIds from "../config/channel_config.js";
+
+//----------------------
+//  config
+//----------------------
+const loggingChannelID = channelIds.channelIds.find(config => config.name === "Logs").channel_id;
+
+//----------------------
 //  main
 //----------------------
 
@@ -17,6 +27,13 @@ export function logSuccess(message) {
 }
 
 // Error logging function
-export function logError(context, error) {
+export async function logError(client, context, error) {
     console.error(`Failed to ${context}:`, error);
+
+    const channel = await client.channels.fetch(loggingChannelID).catch(console.error);
+
+    if (channel) {
+        channel.send(`🚨 **Error in ${context}** 🚨\n\`\`\`${error.toString()}\`\`\``)
+            .catch(err => console.error('Failed to send message to Discord:', err));
+    }
 }

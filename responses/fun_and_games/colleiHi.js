@@ -9,6 +9,8 @@ class hicollei extends Response {
     "hello there, collei!",
     "hello there, collei",
   ];
+  accessLevel = 7;
+  
   cooldown = 5 * 1000;
   async run(message) {
     message.reply(`Hello ${message.author.username}!`);
