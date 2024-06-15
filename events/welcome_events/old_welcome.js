@@ -21,7 +21,7 @@ const colourConfig = botConfig.primaryColor;
 class old_welcome {
   static async sendWelcome(member, channelId) {
     const userMention = `<@${member.id}>`;
-    
+
     const img = await generateImage(member);
     const imgPath = path.join(__dirname, '../../join.png');
     fs.writeFileSync(imgPath, img, (err) => {
@@ -32,10 +32,10 @@ class old_welcome {
     const welcomeEmbed = new EmbedBuilder()
       .setColor(colourConfig)
       .setAuthor({ name: 'Collei', iconURL: 'https://static.wikia.nocookie.net/gensin-impact/images/e/ef/Collei_TCG_Avatar_Icon.png/revision/latest?cb=20221209014948' })
-      .setTitle(`Welcome to Sumeru Akademiya | TGP, ${member.user.username}#${member.user.discriminator}!`)
+      .setTitle(`Welcome to Sumeru Akademiya | TGP, ${member.user.username}!`)
       .setDescription(
         "➾ We hope you enjoy your stay here!\n" +
-        "・Check out our rules in <#975177936929951776> and grab yourself some roles from <#959708759784038400>! <:1colleiheart_nanananans:980914654450700428>\n" +
+        "・Check out our rules in <#975177936929951776> and grab yourself some roles from <#1250076975721349202>! <:1colleiheart_nanananans:980914654450700428>\n" +
         "・Otherwise, feel free to contact us in <#997685316204888104> for any questions!"
       )
       .setImage('attachment://join.png')

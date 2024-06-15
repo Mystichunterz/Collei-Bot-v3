@@ -2,7 +2,7 @@ export default {
     channelIds: [
         {
             name: "Welcome",
-            channel_id: "959712273373478962"
+            channel_id: "959490799446425681"
         },
         {
             name: "General",

@@ -6,7 +6,7 @@ import Canvas from "canvas";
 //----------------------
 //  config
 //----------------------
-const background = "https://cdn.discordapp.com/attachments/1232307090614128653/1249713620753977344/collei_library.png?ex=66684e01&is=6666fc81&hm=f761c7cd68c4c66ad956b3aa79f464e6f7dc4d95d3cfc5687a53b5d07908ff27&";
+const background = "https://cdn.discordapp.com/attachments/818031871215796245/1250078325729267785/collei_library.png?ex=6669a1aa&is=6668502a&hm=dc7a6a0f0a750795d2aa0c15c2ed8c5e77e974227cf77e2a96a4f0fb5275ab4c&";
 
 const dim = {
   height: 670,
