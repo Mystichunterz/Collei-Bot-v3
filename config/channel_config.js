@@ -10,7 +10,7 @@ export default {
         },
         {
             name: "Logs",
-            channel_id: "1078481151351590974"
+            channel_id: "1251511144057798716"
         }
     ]
 }

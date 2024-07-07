@@ -32,7 +32,7 @@ export default {
             name: "Junior Developer",
             level: 4,
             user_ids: [],
-            role_ids: [],
+            role_ids: ["975017365131636766"],
             guild_perms: []
         },
         {
@@ -46,7 +46,7 @@ export default {
             name: "Event Team",
             level: 6,
             user_ids: [],
-            role_ids: [],
+            role_ids: ["961447200691466281"],
             guild_perms: []
         },
         {
