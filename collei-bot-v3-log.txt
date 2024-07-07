@@ -9186,3 +9186,710 @@ Logged in as Collei.v3#8637!
 Date: 07/07/2024, 02:45:30 GMT+8
 Successfully reloaded application (/) commands for guild: Unknown Guild (959483151862878240)
 [32mSlash Commands Loaded![0m
+----------------------
+classes > handlers > commands_handler.js
+----------------------
+----------------------
+classes > handlers > events_handler.js
+----------------------
+----------------------
+classes > handlers > responses_handler.js
+----------------------
+----------------------
+classes > handlers > buttons_handler.js
+----------------------
+----------------------
+classes > handlers > slash_commands_handler.js
+----------------------
+----------------------
+utility > logging.js
+----------------------
+----------------------
+index.js
+----------------------
+[32mBot is starting up![0m
+----------------------
+classes > Response.js
+----------------------
+----------------------
+responses > server_utility > karaokequeue.js
+----------------------
+----------------------
+buttons > karaokequeue > karaoke_join.js
+----------------------
+----------------------
+classes > Event.js
+----------------------
+----------------------
+events > guildMemberAdd.js
+----------------------
+----------------------
+buttons > karaokequeue > karaoke_join.js
+----------------------
+----------------------
+classes > Command.js
+----------------------
+----------------------
+buttons > karaokequeue > karaoke_leave.js
+----------------------
+----------------------
+buttons > karaokequeue > karaoke_join.js
+----------------------
+----------------------
+events > util > userHasPermission.js
+----------------------
+----------------------
+utility > errors.js
+----------------------
+----------------------
+events > interactionCreate.js
+----------------------
+----------------------
+buttons > karaokequeue > karaoke_toggle_queue.js
+----------------------
+----------------------
+commands > memberInfo.js
+----------------------
+----------------------
+events > messageCreate.js
+----------------------
+----------------------
+commands > ping.js
+----------------------
+----------------------
+commands > test.js
+----------------------
+----------------------
+events > messageReactionAdd.js
+----------------------
+----------------------
+events > messageReactionRemove.js
+----------------------
+[33mLoaded module from reaction_roles.js is not a valid event handler. Assuming file is not an Event file.[0m
+----------------------
+events > ready.js
+----------------------
+[33mLoaded module from generateImage.js is not a valid event handler. Assuming file is not an Event file.[0m
+[33mLoaded module from userHasPermission.js is not a valid event handler. Assuming file is not an Event file.[0m
+[33mNo startListener method found in new_welcome.js. Assuming file is not an Event file.[0m
+[33mNo startListener method found in old_welcome.js. Assuming file is not an Event file.[0m
+[33mNo startListener method found in randomised_greeting.js. Assuming file is not an Event file.[0m
+----------------------
+responses > reaction_roles > master_roles.js
+----------------------
+----------------------
+responses > reaction_roles > reaction_roles.js
+----------------------
+----------------------
+responses > server_resources > kofi.js
+----------------------
+----------------------
+responses > server_resources > server_rules.js
+----------------------
+----------------------
+responses > server_resources > serverDirectory.js
+----------------------
+----------------------
+responses > server_resources > server_rules.js
+----------------------
+----------------------
+responses > server_resources > kofi.js
+----------------------
+----------------------
+responses > server_resources > staffapplications.js
+----------------------
+[32mAll components loaded![0m
+[32mNow logging in...[0m
+[32mLogged in! Now loading Slash Commands...[0m
+----------------------
+classes > SlashCommand.js
+----------------------
+----------------------
+slash_commands > begone.js
+----------------------
+----------------------
+slash_commands > catfact.js
+----------------------
+----------------------
+slash_commands > createlotd.js
+----------------------
+----------------------
+slash_commands > createNewsletter.js
+----------------------
+----------------------
+slash_commands > echo.js
+----------------------
+----------------------
+slash_commands > genshinprofile.js
+----------------------
+----------------------
+slash_commands > ping.js
+----------------------
+----------------------
+slash_commands > ping.js
+----------------------
+----------------------
+slash_commands > schedulelotd.js
+----------------------
+----------------------
+slash_commands > sendlotd.js
+----------------------
+----------------------
+slash_commands > sendNewsletter.js
+----------------------
+----------------------
+slash_commands > begone.js
+----------------------
+----------------------
+slash_commands > viewlotdschedule.js
+----------------------
+----------------------
+slash_commands > wikisummary.js
+----------------------
+Guild properties: id = 959483151862878240, name = undefined, available = false
+Started refreshing application (/) commands for guild: Unknown Guild (959483151862878240)
+ 
+ _____       _ _      _  ______       _   
+/  __ \     | | |    (_) | ___ \     | |  
+| /  \/ ___ | | | ___ _  | |_/ / ___ | |_ 
+| |    / _ \| | |/ _ \ | | ___ \/ _ \| __|
+| \__/\ (_) | | |  __/ | | |_/ / (_) | |_ 
+ \____/\___/|_|_|\___|_| \____/ \___/ \__|
+ 
+Collei is online!
+
+Logged in as Collei.v3#8637!
+Date: 07/07/2024, 14:20:34 GMT+8
+Successfully reloaded application (/) commands for guild: Unknown Guild (959483151862878240)
+[32mSlash Commands Loaded![0m
+Command not found.
+----------------------
+classes > handlers > commands_handler.js
+----------------------
+----------------------
+classes > handlers > events_handler.js
+----------------------
+----------------------
+classes > handlers > responses_handler.js
+----------------------
+----------------------
+classes > handlers > buttons_handler.js
+----------------------
+----------------------
+classes > handlers > slash_commands_handler.js
+----------------------
+----------------------
+utility > logging.js
+----------------------
+----------------------
+index.js
+----------------------
+[32mBot is starting up![0m
+----------------------
+classes > Response.js
+----------------------
+----------------------
+responses > server_utility > karaokequeue.js
+----------------------
+----------------------
+buttons > karaokequeue > karaoke_join.js
+----------------------
+----------------------
+classes > Event.js
+----------------------
+----------------------
+events > guildMemberAdd.js
+----------------------
+----------------------
+buttons > karaokequeue > karaoke_join.js
+----------------------
+----------------------
+classes > Command.js
+----------------------
+----------------------
+buttons > karaokequeue > karaoke_leave.js
+----------------------
+----------------------
+buttons > karaokequeue > karaoke_join.js
+----------------------
+----------------------
+events > util > userHasPermission.js
+----------------------
+----------------------
+utility > errors.js
+----------------------
+----------------------
+events > interactionCreate.js
+----------------------
+----------------------
+buttons > karaokequeue > karaoke_toggle_queue.js
+----------------------
+----------------------
+commands > memberInfo.js
+----------------------
+----------------------
+events > messageCreate.js
+----------------------
+----------------------
+commands > ping.js
+----------------------
+----------------------
+commands > test.js
+----------------------
+----------------------
+events > messageReactionAdd.js
+----------------------
+----------------------
+events > messageReactionRemove.js
+----------------------
+[33mLoaded module from reaction_roles.js is not a valid event handler. Assuming file is not an Event file.[0m
+----------------------
+events > ready.js
+----------------------
+[33mLoaded module from generateImage.js is not a valid event handler. Assuming file is not an Event file.[0m
+[33mLoaded module from userHasPermission.js is not a valid event handler. Assuming file is not an Event file.[0m
+[33mNo startListener method found in new_welcome.js. Assuming file is not an Event file.[0m
+[33mNo startListener method found in old_welcome.js. Assuming file is not an Event file.[0m
+[33mNo startListener method found in randomised_greeting.js. Assuming file is not an Event file.[0m
+----------------------
+responses > reaction_roles > master_roles.js
+----------------------
+----------------------
+responses > reaction_roles > reaction_roles.js
+----------------------
+----------------------
+responses > server_resources > kofi.js
+----------------------
+----------------------
+responses > server_resources > server_rules.js
+----------------------
+----------------------
+responses > server_resources > serverDirectory.js
+----------------------
+----------------------
+responses > server_resources > server_rules.js
+----------------------
+----------------------
+responses > server_resources > kofi.js
+----------------------
+----------------------
+responses > server_resources > staffapplications.js
+----------------------
+[32mAll components loaded![0m
+[32mNow logging in...[0m
+[32mLogged in! Now loading Slash Commands...[0m
+----------------------
+classes > SlashCommand.js
+----------------------
+----------------------
+slash_commands > begone.js
+----------------------
+----------------------
+slash_commands > catfact.js
+----------------------
+----------------------
+slash_commands > createlotd.js
+----------------------
+----------------------
+slash_commands > createNewsletter.js
+----------------------
+----------------------
+slash_commands > echo.js
+----------------------
+----------------------
+slash_commands > genshinprofile.js
+----------------------
+----------------------
+slash_commands > ping.js
+----------------------
+----------------------
+slash_commands > ping.js
+----------------------
+----------------------
+slash_commands > schedulelotd.js
+----------------------
+----------------------
+slash_commands > sendlotd.js
+----------------------
+----------------------
+slash_commands > sendNewsletter.js
+----------------------
+----------------------
+slash_commands > begone.js
+----------------------
+----------------------
+slash_commands > viewlotdschedule.js
+----------------------
+----------------------
+slash_commands > wikisummary.js
+----------------------
+Guild properties: id = 959483151862878240, name = undefined, available = false
+Started refreshing application (/) commands for guild: Unknown Guild (959483151862878240)
+ 
+ _____       _ _      _  ______       _   
+/  __ \     | | |    (_) | ___ \     | |  
+| /  \/ ___ | | | ___ _  | |_/ / ___ | |_ 
+| |    / _ \| | |/ _ \ | | ___ \/ _ \| __|
+| \__/\ (_) | | |  __/ | | |_/ / (_) | |_ 
+ \____/\___/|_|_|\___|_| \____/ \___/ \__|
+ 
+Collei is online!
+
+Logged in as Collei.v3#8637!
+Date: 07/07/2024, 14:22:05 GMT+8
+Command not found.
+Successfully reloaded application (/) commands for guild: Unknown Guild (959483151862878240)
+[32mSlash Commands Loaded![0m
+Command not found.
+----------------------
+classes > handlers > commands_handler.js
+----------------------
+----------------------
+classes > handlers > events_handler.js
+----------------------
+----------------------
+classes > handlers > responses_handler.js
+----------------------
+----------------------
+classes > handlers > buttons_handler.js
+----------------------
+----------------------
+classes > handlers > slash_commands_handler.js
+----------------------
+----------------------
+utility > logging.js
+----------------------
+----------------------
+index.js
+----------------------
+[32mBot is starting up![0m
+----------------------
+classes > Response.js
+----------------------
+----------------------
+responses > server_utility > karaokequeue.js
+----------------------
+----------------------
+buttons > karaokequeue > karaoke_join.js
+----------------------
+----------------------
+classes > Event.js
+----------------------
+----------------------
+events > guildMemberAdd.js
+----------------------
+----------------------
+buttons > karaokequeue > karaoke_join.js
+----------------------
+----------------------
+classes > Command.js
+----------------------
+----------------------
+buttons > karaokequeue > karaoke_leave.js
+----------------------
+----------------------
+buttons > karaokequeue > karaoke_join.js
+----------------------
+----------------------
+events > util > userHasPermission.js
+----------------------
+----------------------
+utility > errors.js
+----------------------
+----------------------
+events > interactionCreate.js
+----------------------
+----------------------
+buttons > karaokequeue > karaoke_toggle_queue.js
+----------------------
+----------------------
+commands > memberInfo.js
+----------------------
+----------------------
+events > messageCreate.js
+----------------------
+----------------------
+commands > ping.js
+----------------------
+----------------------
+commands > test.js
+----------------------
+----------------------
+events > messageReactionAdd.js
+----------------------
+----------------------
+events > messageReactionRemove.js
+----------------------
+[33mLoaded module from reaction_roles.js is not a valid event handler. Assuming file is not an Event file.[0m
+----------------------
+events > ready.js
+----------------------
+[33mLoaded module from generateImage.js is not a valid event handler. Assuming file is not an Event file.[0m
+[33mLoaded module from userHasPermission.js is not a valid event handler. Assuming file is not an Event file.[0m
+[33mNo startListener method found in new_welcome.js. Assuming file is not an Event file.[0m
+[33mNo startListener method found in old_welcome.js. Assuming file is not an Event file.[0m
+[33mNo startListener method found in randomised_greeting.js. Assuming file is not an Event file.[0m
+----------------------
+responses > reaction_roles > master_roles.js
+----------------------
+----------------------
+responses > reaction_roles > reaction_roles.js
+----------------------
+----------------------
+responses > server_resources > kofi.js
+----------------------
+----------------------
+responses > server_resources > server_rules.js
+----------------------
+----------------------
+responses > server_resources > serverDirectory.js
+----------------------
+----------------------
+responses > server_resources > server_rules.js
+----------------------
+----------------------
+responses > server_resources > kofi.js
+----------------------
+----------------------
+responses > server_resources > staffapplications.js
+----------------------
+[32mAll components loaded![0m
+[32mNow logging in...[0m
+[32mLogged in! Now loading Slash Commands...[0m
+----------------------
+classes > SlashCommand.js
+----------------------
+----------------------
+slash_commands > begone.js
+----------------------
+----------------------
+slash_commands > catfact.js
+----------------------
+----------------------
+slash_commands > createlotd.js
+----------------------
+----------------------
+slash_commands > createNewsletter.js
+----------------------
+----------------------
+slash_commands > echo.js
+----------------------
+----------------------
+slash_commands > genshinprofile.js
+----------------------
+----------------------
+slash_commands > ping.js
+----------------------
+----------------------
+slash_commands > ping.js
+----------------------
+----------------------
+slash_commands > schedulelotd.js
+----------------------
+----------------------
+slash_commands > sendlotd.js
+----------------------
+----------------------
+slash_commands > sendNewsletter.js
+----------------------
+----------------------
+slash_commands > begone.js
+----------------------
+----------------------
+slash_commands > viewlotdschedule.js
+----------------------
+----------------------
+slash_commands > wikisummary.js
+----------------------
+Guild properties: id = 959483151862878240, name = undefined, available = false
+Started refreshing application (/) commands for guild: Unknown Guild (959483151862878240)
+ 
+ _____       _ _      _  ______       _   
+/  __ \     | | |    (_) | ___ \     | |  
+| /  \/ ___ | | | ___ _  | |_/ / ___ | |_ 
+| |    / _ \| | |/ _ \ | | ___ \/ _ \| __|
+| \__/\ (_) | | |  __/ | | |_/ / (_) | |_ 
+ \____/\___/|_|_|\___|_| \____/ \___/ \__|
+ 
+Collei is online!
+
+Logged in as Collei.v3#8637!
+Date: 07/07/2024, 14:24:54 GMT+8
+Successfully reloaded application (/) commands for guild: Unknown Guild (959483151862878240)
+[32mSlash Commands Loaded![0m
+----------------------
+classes > handlers > commands_handler.js
+----------------------
+----------------------
+classes > handlers > events_handler.js
+----------------------
+----------------------
+classes > handlers > responses_handler.js
+----------------------
+----------------------
+classes > handlers > buttons_handler.js
+----------------------
+----------------------
+classes > handlers > slash_commands_handler.js
+----------------------
+----------------------
+utility > logging.js
+----------------------
+----------------------
+index.js
+----------------------
+[32mBot is starting up![0m
+----------------------
+classes > Response.js
+----------------------
+----------------------
+responses > server_utility > karaokequeue.js
+----------------------
+----------------------
+buttons > karaokequeue > karaoke_join.js
+----------------------
+----------------------
+classes > Event.js
+----------------------
+----------------------
+events > guildMemberAdd.js
+----------------------
+----------------------
+buttons > karaokequeue > karaoke_join.js
+----------------------
+----------------------
+classes > Command.js
+----------------------
+----------------------
+buttons > karaokequeue > karaoke_leave.js
+----------------------
+----------------------
+buttons > karaokequeue > karaoke_join.js
+----------------------
+----------------------
+events > util > userHasPermission.js
+----------------------
+----------------------
+utility > errors.js
+----------------------
+----------------------
+events > interactionCreate.js
+----------------------
+----------------------
+buttons > karaokequeue > karaoke_toggle_queue.js
+----------------------
+----------------------
+commands > memberInfo.js
+----------------------
+----------------------
+events > messageCreate.js
+----------------------
+----------------------
+commands > ping.js
+----------------------
+----------------------
+commands > test.js
+----------------------
+----------------------
+events > messageReactionAdd.js
+----------------------
+----------------------
+events > messageReactionRemove.js
+----------------------
+[33mLoaded module from reaction_roles.js is not a valid event handler. Assuming file is not an Event file.[0m
+----------------------
+events > ready.js
+----------------------
+[33mLoaded module from generateImage.js is not a valid event handler. Assuming file is not an Event file.[0m
+[33mLoaded module from userHasPermission.js is not a valid event handler. Assuming file is not an Event file.[0m
+[33mNo startListener method found in new_welcome.js. Assuming file is not an Event file.[0m
+[33mNo startListener method found in old_welcome.js. Assuming file is not an Event file.[0m
+[33mNo startListener method found in randomised_greeting.js. Assuming file is not an Event file.[0m
+----------------------
+responses > reaction_roles > master_roles.js
+----------------------
+----------------------
+responses > reaction_roles > reaction_roles.js
+----------------------
+----------------------
+responses > server_resources > kofi.js
+----------------------
+----------------------
+responses > server_resources > server_rules.js
+----------------------
+----------------------
+responses > server_resources > serverDirectory.js
+----------------------
+----------------------
+responses > server_resources > server_rules.js
+----------------------
+----------------------
+responses > server_resources > kofi.js
+----------------------
+----------------------
+responses > server_resources > staffapplications.js
+----------------------
+[32mAll components loaded![0m
+[32mNow logging in...[0m
+[32mLogged in! Now loading Slash Commands...[0m
+----------------------
+classes > SlashCommand.js
+----------------------
+----------------------
+slash_commands > begone.js
+----------------------
+----------------------
+slash_commands > catfact.js
+----------------------
+----------------------
+slash_commands > createlotd.js
+----------------------
+----------------------
+slash_commands > createNewsletter.js
+----------------------
+----------------------
+slash_commands > echo.js
+----------------------
+----------------------
+slash_commands > genshinprofile.js
+----------------------
+----------------------
+slash_commands > ping.js
+----------------------
+----------------------
+slash_commands > ping.js
+----------------------
+----------------------
+slash_commands > schedulelotd.js
+----------------------
+----------------------
+slash_commands > sendlotd.js
+----------------------
+----------------------
+slash_commands > sendNewsletter.js
+----------------------
+----------------------
+slash_commands > begone.js
+----------------------
+----------------------
+slash_commands > viewlotdschedule.js
+----------------------
+----------------------
+slash_commands > wikisummary.js
+----------------------
+Guild properties: id = 959483151862878240, name = undefined, available = false
+Started refreshing application (/) commands for guild: Unknown Guild (959483151862878240)
+ 
+ _____       _ _      _  ______       _   
+/  __ \     | | |    (_) | ___ \     | |  
+| /  \/ ___ | | | ___ _  | |_/ / ___ | |_ 
+| |    / _ \| | |/ _ \ | | ___ \/ _ \| __|
+| \__/\ (_) | | |  __/ | | |_/ / (_) | |_ 
+ \____/\___/|_|_|\___|_| \____/ \___/ \__|
+ 
+Collei is online!
+
+Logged in as Collei.v3#8637!
+Date: 07/07/2024, 14:26:43 GMT+8
+Successfully reloaded application (/) commands for guild: Unknown Guild (959483151862878240)
+[32mSlash Commands Loaded![0m
