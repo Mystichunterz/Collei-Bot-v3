@@ -68,7 +68,7 @@ class TaskManager {
         try {
             fs.writeFileSync(taskFilePath, JSON.stringify(this.tasks, null, 2));
             const currentTimeSGT = new Date().toLocaleTimeString('en-US', { timeZone: 'Asia/Singapore', hour: '2-digit', minute: '2-digit', hour12: false });
-            // logSuccess(`Tasks saved successfully at ${currentTimeSGT} SGT.`);
+            logSuccess(`Tasks saved successfully at ${currentTimeSGT} SGT.`);
         } catch (error) {
             logError(this.client, 'save tasks', error);
         }

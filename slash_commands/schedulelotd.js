@@ -26,8 +26,8 @@ import { botConfig } from '../config/bot_config.js';
 //----------------------
 //  config
 //----------------------
-// const LOTDChannelId = channelIds.channelIds.find(config => config.name === "AkashaTerminal").channel_id;
-const LOTDChannelId = channelIds.channelIds.find(config => config.name === "Testing").channel_id;
+const LOTDChannelId = channelIds.channelIds.find(config => config.name === "AkashaTerminal").channel_id;
+// const LOTDChannelId = channelIds.channelIds.find(config => config.name === "Testing").channel_id;
 const ServerId = botConfig.primaryServerId;
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));

@@ -111,7 +111,7 @@ class serverDirectoryNew extends Response {
       .setColor(primaryColour)
       .setThumbnail('attachment://nahida-hopeful.png')
       .setImage('attachment://SERVER_FOCUS.png');
-    
+
     const serverFocusEmbed = new EmbedBuilder()
       .setTitle("»» Server Focus ««")
       .setDescription(dedent`**Sumeru Akademiya** serves as a place for everyone to have casual chats and hang out, regardless of whether they play Genshin Impact! We often plan lore-related projects and events too!
@@ -137,13 +137,13 @@ class serverDirectoryNew extends Response {
       • <#1250076975721349202> - Roles for server participation & customisation.
       
       __**Important**__
-      • <#997683565645004860> - A directory explaining the server's structure. You're here!
+      • <#1259855067876429824> - A directory explaining the server's structure. You're here!
       • <#1009431302564487208> - Apply for server staff here.
       • <#1015814731749146634> - Explains the rewards for donating to our kofi, and a thank you to our donors.
       • <#975005257346215936> - A channel to announce partnerships with other servers.
       • <#959483271358578728> - Suggest ideas for the server here!
       • <#997685316204888104> - Contact staff for support here.
-      • <#960763882270523444> - The hall of hame (or shame) where the best messages are showcased.
+      • <#960763882270523444> - The hall of fame (or shame) where the best messages are showcased.
 
       __**Information Bulletin**__
       • <#959571687412748288> - Announcements for server-wide events and projects. Get the <@&959723574669742131> role to be notified of these announcements.
@@ -204,7 +204,7 @@ class serverDirectoryNew extends Response {
       ${dividerSection}`)
       .setColor(primaryColour)
       .setImage('attachment://ROLES_AND_REWARDS.png');
-    
+
     const rolesEmbed = new EmbedBuilder()
       .setTitle("»» Roles and Rewards ««")
       .setDescription(dedent`
@@ -355,7 +355,7 @@ class serverDirectoryNew extends Response {
       .setColor(primaryColour)
       .setThumbnail('attachment://dori-popcorn.png')
       .setImage('attachment://Contact_The_Mods.png');
-    
+
     const contactUsEmbed = new EmbedBuilder()
       .setTitle("»» Contact Us ««")
       .setDescription(dedent`
@@ -368,7 +368,7 @@ class serverDirectoryNew extends Response {
       ${dividerSection}`)
       .setColor(primaryColour)
       .setImage('attachment://FAQ.png');
-    
+
     const FAQEmbed = new EmbedBuilder()
       .setTitle("»» FAQ ««")
       .setDescription(dedent`
@@ -407,18 +407,18 @@ class serverDirectoryNew extends Response {
       .setImage(emptyImage);
 
     const scrollEmbed = new EmbedBuilder()
-      .setDescription(dedent`[Scroll To Top!](https://discord.com/channels/959483151862878240/997683565645004860/1009646032780546118)`)
+      .setDescription(dedent`[Scroll To Top!](https://discord.com/channels/959483151862878240/1259855067876429824/1259855132573831170)`)
       .setColor(primaryColour)
       .setImage(emptyImage);
 
     await message.channel.send({ embeds: [introductionEmbed], files: [headerImage] });
     await message.channel.send({ embeds: [aboutUsEmbed] });
     await message.channel.send({ embeds: [socialMediaEmbed], files: [serverFocusImage] });
-    await message.channel.send({ embeds: [serverFocusEmbed], files: [channelsImage]});
+    await message.channel.send({ embeds: [serverFocusEmbed], files: [channelsImage] });
     await message.channel.send({ embeds: [channelsFirstEmbed] });
     await message.channel.send({ embeds: [channelsSecondEmbed], files: [rolesAndRewardsImage] });
-    await message.channel.send({ embeds: [rolesEmbed], files: [staffTeamImage]});
-    await message.channel.send({ embeds: [staffEmbed], files: [contactTheMods]});
+    await message.channel.send({ embeds: [rolesEmbed], files: [staffTeamImage] });
+    await message.channel.send({ embeds: [staffEmbed], files: [contactTheMods] });
     await message.channel.send({ embeds: [contactUsEmbed], files: [FAQImage] });
     await message.channel.send({ embeds: [FAQEmbed] });
     await message.channel.send({ embeds: [scrollEmbed] });
