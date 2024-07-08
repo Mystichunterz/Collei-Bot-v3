@@ -130,3 +130,5 @@ dist
 .pnp.*
 
 ./config/bot_config.js
+
+/data/*
