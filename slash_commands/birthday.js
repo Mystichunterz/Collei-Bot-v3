@@ -21,7 +21,7 @@ import { logSuccess, logError } from '../utility/logging.js';
 class Birthday extends SlashCommand {
     accessLevel = 9;
     constructor(client) {
-        super(client, 'birthday', 'Give a user the birthday role for 24 hours.', [
+        super(client, 'birthday', 'Give a user the birthday role for 24 hours.', 'General', [
             {
                 name: 'user',
                 type: ApplicationCommandOptionType.User,

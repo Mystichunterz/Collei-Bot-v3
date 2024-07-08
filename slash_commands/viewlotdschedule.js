@@ -49,7 +49,7 @@ class ViewLOTDSchedule extends SlashCommand {
         // Generate the list of scheduled LOTDs
         const scheduleList = entries.map((entry, index) => {
             const { date, embed } = entry;
-            return `**${index + 1}. Date: ${date}**\n**Title:** ${embed.title}\n**Authors:** ${embed.footer.text}\n`;
+            return `**${index + 1}. Date: ${date}**\n**Title:** ${embed.title}\n**Authors:** ${embed.footer.text.replace('Article Credits:', '').trim()}\n`;
         }).join('\n\n');
 
         await interaction.reply({ content: scheduleList });
