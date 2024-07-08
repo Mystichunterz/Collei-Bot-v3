@@ -11,10 +11,10 @@ console.log("----------------------");
 //  imports
 //----------------------
 import { ActivityType, PresenceUpdateStatus } from "discord.js";
-
 import Event from "../classes/Event.js";
 import { botConfig } from "../config/bot_config.js";
 import PresenceManager from '../managers/PresenceManager.js';
+import TaskManager from '../managers/TaskManager.js';
 
 //----------------------
 //  config
@@ -52,6 +52,10 @@ class Ready extends Event {
     presenceManager.startRotation(300000);
 
     console.log('Presence rotation has started.');
+
+    // Initialize and start the task manager
+    const taskManager = new TaskManager(this.client);
+    console.log('Task manager has started.');
   }
 }
 
