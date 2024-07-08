@@ -71,7 +71,7 @@ class CreateNewsletter extends SlashCommand {
         if (imageUrl) embed.setImage(imageUrl);
 
         // Save the embed to a local file (simplified storage)
-        fs.writeFileSync('../lastNewsletter.json', JSON.stringify(embed.toJSON()));
+        fs.writeFileSync('../data/lastNewsletter.json', JSON.stringify(embed.toJSON()));
 
         await interaction.reply({ content: 'Here is a preview of your newsletter:', embeds: [embed], ephemeral: true });
         await interaction.followUp({ content: 'To send this newsletter, use the /sendnewsletter command.', ephemeral: true });

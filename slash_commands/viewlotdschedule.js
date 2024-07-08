@@ -22,7 +22,7 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 // Helper function to load LOTD entries from JSON file
 const loadLOTDEntries = () => {
-    const filePath = path.join(__dirname, '../lotd_schedule.json');
+    const filePath = path.join(__dirname, '../data/lotd_schedule.json');
     if (fs.existsSync(filePath)) {
         const data = fs.readFileSync(filePath, 'utf-8');
         return JSON.parse(data);

@@ -29,7 +29,7 @@ class SendLOTD extends SlashCommand {
 
     async run(client, interaction) {
         // Define the path to the saved embed file
-        const filePath = path.join(__dirname, '../lastLOTD.json');
+        const filePath = path.join(__dirname, '../data/lastLOTD.json');
 
         // Check if the file exists
         if (!fs.existsSync(filePath)) {
@@ -43,7 +43,7 @@ class SendLOTD extends SlashCommand {
         const embed = EmbedBuilder.from(embedJson);
 
         // Define the path to the local image
-        const localImagePath = path.join(__dirname, '../LOTD.png');
+        const localImagePath = path.join(__dirname, '../assets/images/lore_of_the_day/LOTD.png');
         const imageAttachment = new AttachmentBuilder(localImagePath, { name: 'LOTD.png' });
 
         // Predefined embed with local image

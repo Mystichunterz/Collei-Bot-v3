@@ -25,7 +25,7 @@ class SendNewsletter extends SlashCommand {
 
     async run(client, interaction) {
         // Read the last saved embed from the file
-        const embedData = fs.readFileSync('../lastNewsletter.json', 'utf-8');
+        const embedData = fs.readFileSync('../data/lastNewsletter.json', 'utf-8');
         const embedJson = JSON.parse(embedData);
         const embed = EmbedBuilder.from(embedJson);
 

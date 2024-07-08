@@ -64,7 +64,7 @@ class CreateLOTD extends SlashCommand {
         const authorsText = authors.length ? `${authors.join(', ')}, and ${lastAuthor}` : lastAuthor;
 
         // Define the path to the local image
-        const localImagePath = path.join(__dirname, '../LOTD.png');
+        const localImagePath = path.join(__dirname, '../assets/images/lore_of_the_day/LOTD.png');
         const imageAttachment = new AttachmentBuilder(localImagePath, { name: 'LOTD.png' });
 
         // Predefined embed with local image
@@ -85,7 +85,7 @@ class CreateLOTD extends SlashCommand {
         if (imageUrl) embed.setImage(imageUrl);
 
         // Save the embed to a local file (simplified storage)
-        const filePath = path.join(__dirname, '../lastLOTD.json');
+        const filePath = path.join(__dirname, '../data/lastLOTD.json');
         fs.writeFileSync(filePath, JSON.stringify(embed.toJSON()));
 
         await interaction.reply({

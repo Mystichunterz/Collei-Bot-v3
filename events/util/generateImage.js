@@ -7,7 +7,7 @@ import Canvas from "canvas";
 //  config
 //----------------------
 // const background = "https://imgur.com/a/0uFFRpN";
-const background = './events/util/collei_library.png';
+const background = './assets/images/welcome/collei_library.png';
 
 const dim = {
   height: 670,
