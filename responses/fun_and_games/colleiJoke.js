@@ -6,7 +6,7 @@ class colleiJoke extends Response {
     "collei, tell us a joke",
     "collei tell us a joke",
   ];
-  accessLevel = 7;
+  accessLevel = 10;
 
   async run(message) {
     let jokeNumber = Math.floor(Math.random() * 7) + 1;

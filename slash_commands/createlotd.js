@@ -22,7 +22,7 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 //  main
 //----------------------
 class CreateLOTD extends SlashCommand {
-    accessLevel = 6;
+    accessLevel = 7;
     constructor(client) {
         super(client, 'createlotd', 'Create and save a LOTD embed.', [
             {

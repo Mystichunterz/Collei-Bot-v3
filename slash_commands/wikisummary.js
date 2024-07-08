@@ -17,7 +17,7 @@ import fetch from 'node-fetch';
 //  main
 //----------------------
 class WikiSummary extends SlashCommand {
-    accessLevel = 7;
+    accessLevel = 10;
     constructor(client) {
         super(client, 'wikisummary', 'Get the first few lines of a Wikipedia page.', [
             {

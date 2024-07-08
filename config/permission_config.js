@@ -11,28 +11,28 @@ export default {
             name: "Head Developer",
             level: 1,
             user_ids: ["448795804153675779"],
-            role_ids: ["974920024278048828"],
-            guild_perms: []
-        },
-        {
-            name: "Developer",
-            level: 2,
-            user_ids: [],
             role_ids: [],
             guild_perms: []
         },
         {
             name: "Administrator",
-            level: 3,
+            level: 2,
             user_ids: ["257341908924366848"],
             role_ids: ["959702592924041258"],
             guild_perms: ["ADMINISTRATOR"]
         },
         {
+            name: "Developer",
+            level: 3,
+            user_ids: [],
+            role_ids: ["976831414563659867"],
+            guild_perms: []
+        },
+        {
             name: "Junior Developer",
             level: 4,
             user_ids: [],
-            role_ids: ["975017365131636766"],
+            role_ids: [],
             guild_perms: []
         },
         {
@@ -43,15 +43,36 @@ export default {
             guild_perms: ["MANAGE_MESSAGES"]
         },
         {
-            name: "Event Team",
+            name: "Lore Team",
             level: 6,
+            user_ids: [],
+            role_ids: ["975017365131636766"],
+            guild_perms: []
+        },
+        {
+            name: "Media Team",
+            level: 7,
+            user_ids: [],
+            role_ids: ["976709850195185664"],
+            guild_perms: []
+        },
+        {
+            name: "Event Team",
+            level: 8,
             user_ids: [],
             role_ids: ["961447200691466281"],
             guild_perms: []
         },
         {
+            name: "Veteran",
+            level: 9,
+            user_ids: [],
+            role_ids: ["970242274527166485"],
+            guild_perms: ["SEND_MESSAGES"]
+        },
+        {
             name: "Member",
-            level: 7,
+            level: 10,
             user_ids: [],
             role_ids: ["961747948394405888"],
             guild_perms: ["SEND_MESSAGES"]

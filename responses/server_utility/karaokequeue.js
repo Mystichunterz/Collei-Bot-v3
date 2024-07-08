@@ -31,7 +31,7 @@ let requeueField = "";
 
 class karaoke_queue extends Response {
   aliases = ["kqueue", "summon-karaoke", "kq", "karaoke-queue"];
-  accessLevel = 6;
+  accessLevel = 8;
 
   currentMessage = null;
 

@@ -19,7 +19,7 @@ import { EmbedBuilder } from "discord.js";
 //----------------------
 class socials extends Response {
   aliases = ["summon-socials"];
-  accessLevel = 7;
+  accessLevel = 10;
   async run(message) {
     const newEmbed = new EmbedBuilder()
       .setTitle("«« ✦・Sumeru Akademiya | Socials・✦ »»")

@@ -3,7 +3,7 @@ import Response from "../../classes/Response.js";
 class colleiCoin extends Response {
   aliases = ["collei, flip a coin"];
   cooldown = 5 * 1000;
-  accessLevel = 7;
+  accessLevel = 10;
   
   async run(message) {
     let jokeNumber = Math.floor(Math.random() * 2) + 1;

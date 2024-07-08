@@ -8,7 +8,7 @@ import { EmbedBuilder } from "discord.js";
 //  main
 //----------------------
 class Help extends Command {
-    accessLevel = 7;
+    accessLevel = 10;
     category = "General";
     description = "Displays a list of all available commands or information about a specific command.";
 

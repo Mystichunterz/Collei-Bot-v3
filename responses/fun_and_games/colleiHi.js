@@ -9,7 +9,7 @@ class hicollei extends Response {
     "hello there, collei!",
     "hello there, collei",
   ];
-  accessLevel = 7;
+  accessLevel = 10;
   
   cooldown = 5 * 1000;
   async run(message) {

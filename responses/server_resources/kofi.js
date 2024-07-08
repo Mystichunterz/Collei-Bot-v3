@@ -19,7 +19,7 @@ import { EmbedBuilder } from "discord.js";
 //----------------------
 class kofi extends Response {
   aliases = ["summon-kofi"];
-  accessLevel = 7;
+  accessLevel = 10;
   async run(message) {
     const newEmbed = new EmbedBuilder()
       .setTitle("«« ✦・Our Kofis・✦ »»")

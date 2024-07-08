@@ -18,7 +18,7 @@ import fs from 'fs';
 //  main
 //----------------------
 class CreateNewsletter extends SlashCommand {
-    accessLevel = 6;
+    accessLevel = 7;
     constructor(client) {
         super(client, 'createnewsletter', 'Create and save a newsletter embed.', [
             {

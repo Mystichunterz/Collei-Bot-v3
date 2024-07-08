@@ -2,7 +2,7 @@ import Response from "../../classes/Response.js";
 
 class CharacterUltLines extends Response {
   aliases = ["collei ult"];
-  accessLevel = 7;
+  accessLevel = 10;
 
   // Store ult lines for each character and mix ally and enemy responses together
   ultLines = [
