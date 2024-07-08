@@ -36,7 +36,7 @@ const loadLOTDEntries = () => {
 class ViewLOTDSchedule extends SlashCommand {
     accessLevel = 6;
     constructor(client) {
-        super(client, 'viewlotdschedule', 'View the scheduled LOTDs.', []);
+        super(client, 'viewlotdschedule', 'View the scheduled LOTDs.', 'General', []);
     }
 
     async run(client, interaction) {

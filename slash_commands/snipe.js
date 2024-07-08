@@ -17,7 +17,7 @@ import SlashCommand from '../classes/SlashCommand.js';
 //----------------------
 class Snipe extends SlashCommand {
   constructor(client) {
-    super(client, 'snipe', 'Snipe someone', []);
+    super(client, 'snipe', 'Snipe someone', 'General', []);
   }
 
   async run(client, interaction) {

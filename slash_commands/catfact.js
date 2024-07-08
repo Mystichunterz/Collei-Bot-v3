@@ -26,7 +26,7 @@ const primaryColour = botConfig.primaryColor;
 class CatFact extends SlashCommand {
     accessLevel = 10;
     constructor(client) {
-        super(client, 'catfact', 'Get a random cat fact.', []);
+        super(client, 'catfact', 'Get a random cat fact.', 'General', []);
     }
 
     async run(client, interaction) {

@@ -58,11 +58,11 @@ class Bot extends Client {
         await this.slashCommandsHandler.loadSlashCommands(serverId);
         logSuccess('Slash Commands Loaded!');
       } catch (error) {
-        logError('load Slash Commands', error);
+        logError(this, 'loading Slash Commands', error);
       }
 
     } catch (error) {
-      logError('load initial components', error);
+      logError(this, 'loading initial components', error);
     }
   }
 

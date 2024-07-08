@@ -18,7 +18,7 @@ import SlashCommand from '../classes/SlashCommand.js';
 class Ping extends SlashCommand {
   accessLevel = 1;
   constructor(client) {
-    super(client, 'permissiontest', 'Locked behind security clearance 1.', []);
+    super(client, 'permissiontest', 'Locked behind security clearance 1.', 'Dev', []);
   }
 
   async run(client, interaction) {

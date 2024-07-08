@@ -18,7 +18,7 @@ import SlashCommand from '../classes/SlashCommand.js';
 class Echo extends SlashCommand {
     accessLevel = 1;
     constructor(client) {
-        super(client, 'echo', 'Do the speak.', [
+        super(client, 'echo', 'Do the speak.', 'Dev', [
             {
                 name: 'message',
                 type: 3,

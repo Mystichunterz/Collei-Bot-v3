@@ -33,7 +33,7 @@ export async function logError(client, context, error) {
     const channel = await client.channels.fetch(loggingChannelID).catch(console.error);
 
     if (channel) {
-        channel.send(`🚨 **Error in ${context}** 🚨\n\`\`\`${error.toString()}\`\`\``)
+        channel.send(`🚨 **Error encountered with ${context}** 🚨\n\`\`\`${error.toString()}\`\`\``)
             .catch(err => console.error('Failed to send message to Discord:', err));
     }
 }

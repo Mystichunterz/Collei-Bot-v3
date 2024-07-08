@@ -20,7 +20,7 @@ import fs from 'fs';
 class SendNewsletter extends SlashCommand {
     accessLevel = 6;
     constructor(client) {
-        super(client, 'sendnewsletter', 'Sends the last saved newsletter.', []);
+        super(client, 'sendnewsletter', 'Sends the last saved newsletter.', 'Staff - Media', []);
     }
 
     async run(client, interaction) {

@@ -18,7 +18,7 @@ import fetch from 'node-fetch';
 //----------------------
 class GenshinProfile extends SlashCommand {
     constructor(client) {
-        super(client, 'genshinprofile', 'Get Genshin Impact player data.', [
+        super(client, 'genshinprofile', 'Get Genshin Impact player data.', 'General', [
             {
                 name: 'uid',
                 type: 3, // STRING type for the UID input

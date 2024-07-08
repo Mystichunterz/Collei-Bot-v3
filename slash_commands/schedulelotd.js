@@ -42,7 +42,7 @@ const saveLOTDEntries = (entries) => {
 class ScheduleLOTD extends SlashCommand {
     accessLevel = 6;
     constructor(client) {
-        super(client, 'schedulelotd', 'Save a LOTD with a scheduled date.', [
+        super(client, 'schedulelotd', 'Save a LOTD with a scheduled date.', 'Staff - Lore', [
             {
                 name: 'date',
                 type: 3,

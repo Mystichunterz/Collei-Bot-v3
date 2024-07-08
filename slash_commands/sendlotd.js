@@ -24,7 +24,7 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 class SendLOTD extends SlashCommand {
     accessLevel = 6;
     constructor(client) {
-        super(client, 'sendlotd', 'Sends the last saved LOTD.', []);
+        super(client, 'sendlotd', 'Sends the last saved LOTD.', 'Staff - Lore', []);
     }
 
     async run(client, interaction) {

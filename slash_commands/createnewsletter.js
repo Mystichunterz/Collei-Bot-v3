@@ -20,7 +20,7 @@ import fs from 'fs';
 class CreateNewsletter extends SlashCommand {
     accessLevel = 7;
     constructor(client) {
-        super(client, 'createnewsletter', 'Create and save a newsletter embed.', [
+        super(client, 'createnewsletter', 'Create and save a newsletter embed.', 'Staff - Media', [
             {
                 name: 'issue_number',
                 type: 4,

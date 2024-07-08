@@ -11,10 +11,11 @@ console.log("----------------------");
 //  main
 //----------------------
 class SlashCommand {
-  constructor(client, name, description, options = []) {
+  constructor(client, name, description, category = 'General', options = []) {
     this.client = client;
     this.name = name;
     this.description = description;
+    this.category = category;
     this.options = options;
   }
 
