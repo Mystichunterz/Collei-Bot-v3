@@ -50,7 +50,7 @@ class Help extends Command {
 
     getSpecificCommand(message, commandName) {
         // Sanitize the commandName input to prevent mentions
-        const sanitizedCommandName = commandName.replace(/[@#]/g, '\\$&');
+        const sanitizedCommandName = commandName.replace(/@/g, '');
 
         const command = this.client.commands.get(commandName.toLowerCase());
         if (!command) {
