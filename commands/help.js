@@ -49,9 +49,12 @@ class Help extends Command {
     }
 
     getSpecificCommand(message, commandName) {
+        // Sanitize the commandName input to prevent mentions
+        const sanitizedCommandName = commandName.replace(/[@#]/g, '\\$&');
+
         const command = this.client.commands.get(commandName.toLowerCase());
         if (!command) {
-            return message.channel.send({ content: "No information found for command **" + commandName + "**" });
+            return message.channel.send({ content: "No information found for command **" + sanitizedCommandName + "**" });
         }
 
         const embed = new EmbedBuilder()
