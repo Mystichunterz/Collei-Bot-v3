@@ -56,9 +56,10 @@ class TaskManager {
         try {
             if (fs.existsSync(lotdFilePath)) {
                 const fileContent = fs.readFileSync(lotdFilePath);
-                this.lotdEntries = JSON.parse(fileContent);
+                this.lotdEntries = JSON.parse(fileContent) || []; // If the file is empty, set it to an empty array
+            } else {
+                this.lotdEntries = []; // Initialize with an empty array if the file doesn't exist
             }
-            // logSuccess('LOTD entries loaded successfully.');
         } catch (error) {
             logError(this.client, 'load LOTD entries', error);
         }
@@ -68,7 +69,7 @@ class TaskManager {
         try {
             fs.writeFileSync(taskFilePath, JSON.stringify(this.tasks, null, 2));
             const currentTimeSGT = new Date().toLocaleTimeString('en-US', { timeZone: 'Asia/Singapore', hour: '2-digit', minute: '2-digit', hour12: false });
-            logSuccess(`Tasks saved successfully at ${currentTimeSGT} SGT.`);
+            // logSuccess(`Tasks saved successfully at ${currentTimeSGT} SGT.`);
         } catch (error) {
             logError(this.client, 'save tasks', error);
         }
@@ -76,11 +77,11 @@ class TaskManager {
 
     saveLOTDEntries() {
         try {
-            // logSuccess('Saving LOTD entries... !', this.lotdEntries);
+            logSuccess('Saving LOTD entries... !', this.lotdEntries);
             const lotdData = JSON.stringify(this.lotdEntries, null, 2);
-            // logSuccess(`LOTD entries data: ${lotdData}`);
+            logSuccess(`LOTD entries data: ${lotdData}`);
             fs.writeFileSync(lotdFilePath, lotdData);
-            // logSuccess('LOTD entries saved successfully.');
+            logSuccess('LOTD entries saved successfully.');
         } catch (error) {
             logError(this.client, 'save LOTD entries', error);
         }
@@ -98,16 +99,15 @@ class TaskManager {
 
     async startScheduler() {
         while (true) {
-            const now = new Date();
-            const nowSGT = new Date(now.toLocaleString("en-US", { timeZone: "Asia/Singapore" }));
+            const nowSGT = new Date(new Date().toLocaleString("en-US", { timeZone: "Asia/Singapore" }));
 
             const remainingTasks = [];
             const remainingLOTDEntries = [];
 
             for (const task of this.tasks) {
-                const executeTime = new Date(task.executeAt);
-                const executeTimeSGT = new Date(executeTime.toLocaleString("en-US", { timeZone: "Asia/Singapore" }));
+                const executeTimeSGT = new Date(task.executeAt);  // Assuming task.executeAt is already in SGT
                 if (nowSGT >= executeTimeSGT) {
+                    console.log("Executing task");
                     await this.executeTask(task);
                 } else {
                     remainingTasks.push(task);
@@ -115,24 +115,27 @@ class TaskManager {
             }
 
             for (const entry of this.lotdEntries) {
-                const executeDateTime = new Date(`${entry.date}T${entry.time}:00`);
-                const executeDateTimeSGT = new Date(executeDateTime.toLocaleString("en-US", { timeZone: "Asia/Singapore" }));
+                const executeDateTimeSGT = new Date(`${entry.date}T${entry.time}:00`);  // Assuming entry.date and entry.time are already in SGT
+                // Check if it is time to execute the entry
                 if (nowSGT >= executeDateTimeSGT) {
                     logSuccess(`Posting LOTD scheduled for ${entry.date} at ${entry.time} SGT.`);
                     const success = await this.postLOTD(entry);
                     if (!success) {
-                        remainingLOTDEntries.push(entry);
+                        remainingLOTDEntries.push(entry);  // Keep the entry if posting failed
                     }
                 } else {
-                    remainingLOTDEntries.push(entry);
+                    remainingLOTDEntries.push(entry);  // Keep the entry if it's not time yet
                 }
             }
 
+            // Update the entries with only those that are still pending
             this.tasks = remainingTasks;
             this.lotdEntries = remainingLOTDEntries;
 
+            // Save the updated entries
             this.saveTasks();
             this.saveLOTDEntries();
+
             await setTimeout(60000); // Check every 60 seconds
         }
     }
@@ -162,7 +165,7 @@ class TaskManager {
 
     async postLOTD(entry) {
         try {
-            console.log("Entry", entry)
+            // console.log("Entry", entry)
             const guild = await this.client.guilds.fetch(entry.guildId);
             const channel = guild.channels.cache.get(entry.channelId);
             if (channel) {
@@ -179,6 +182,8 @@ class TaskManager {
                     .setTimestamp();
 
                 // Send the embed to the channel
+                // Owner role for testing
+                // await channel.send("<@&960729593302622238>");
                 await channel.send("<@&999532997323792405>");
                 await channel.send({
                     embeds: [loreEmbed, embed],

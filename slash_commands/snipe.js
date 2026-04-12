@@ -16,6 +16,7 @@ import SlashCommand from '../classes/SlashCommand.js';
 //  main
 //----------------------
 class Snipe extends SlashCommand {
+  accessLevel = 10;
   constructor(client) {
     super(client, 'snipe', 'Snipe someone', 'General', []);
   }

@@ -16,6 +16,7 @@ import SlashCommand from '../classes/SlashCommand.js';
 //  main
 //----------------------
 class Ping extends SlashCommand {
+  accessLevel = 10;
   constructor(client) {
     super(client, 'ping', 'Responds with Pong!', 'General', []);
   }

@@ -17,6 +17,7 @@ import fetch from 'node-fetch';
 //  main
 //----------------------
 class GenshinProfile extends SlashCommand {
+    accessLevel = 10;
     constructor(client) {
         super(client, 'genshinprofile', 'Get Genshin Impact player data.', 'General', [
             {

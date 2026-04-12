@@ -51,8 +51,9 @@ class Birthday extends SlashCommand {
             }
 
             await member.roles.add(role);
-            await interaction.reply(`${user.username} has been given the birthday role!`);
-            logSuccess(`Birthday role given to ${user.username}`);
+            const safeUsername = user.username.replace(/@/g, '@\u200b');
+            await interaction.reply(`\`${safeUsername}\` has been given the birthday role!`);
+            logSuccess(`Birthday role given to ${user.tag}`);
 
             const taskManager = new TaskManager(client);
             const executeAt = new Date(Date.now() + 24 * 60 * 60 * 1000);

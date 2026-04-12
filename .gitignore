@@ -132,3 +132,4 @@ dist
 ./config/bot_config.js
 
 /data/*
+/archives/*

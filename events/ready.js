@@ -19,7 +19,7 @@ import TaskManager from '../managers/TaskManager.js';
 //----------------------
 //  config
 //----------------------
-const botName = botConfig.botName || "Nyx"; 
+const botName = botConfig.botName || "Nyx";
 
 //----------------------
 //  main
@@ -47,6 +47,8 @@ class Ready extends Event {
     presenceManager.addPresence('Theorizing about Genshin Lore', ActivityType.Custom, PresenceUpdateStatus.Online);
     presenceManager.addPresence('Caprice of the Leaves', ActivityType.Listening, PresenceUpdateStatus.Idle);
     presenceManager.addPresence('Out on Patrol', ActivityType.Custom, PresenceUpdateStatus.DoNotDisturb);
+    presenceManager.addPresence('Valorant', ActivityType.Playing, PresenceUpdateStatus.Online);
+    presenceManager.addPresence('Project Zomboid', ActivityType.Playing, PresenceUpdateStatus.Online);
 
     // Start rotation
     presenceManager.startRotation(300000);

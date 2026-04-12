@@ -16,6 +16,7 @@ import SlashCommand from '../classes/SlashCommand.js';
 //  main
 //----------------------
 class Begone extends SlashCommand {
+  accessLevel = 10;
   constructor(client) {
     super(client, 'begone', 'Send someone flying!', 'General', []);
   }

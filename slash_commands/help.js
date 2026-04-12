@@ -17,6 +17,7 @@ import { EmbedBuilder, ApplicationCommandOptionType } from 'discord.js';
 //  main
 //----------------------
 class Help extends SlashCommand {
+    accessLevel = 10;
     constructor(client) {
         super(client, 'help', 'Displays a list of all available slash commands or information about a specific slash command.', 'General', [
             {

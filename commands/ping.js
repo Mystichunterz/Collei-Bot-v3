@@ -31,13 +31,13 @@ class Ping extends Command {
 
     const newEmbed = new EmbedBuilder()
       .setColor(primaryColour)
-      .setTitle(`Vennessa Bot Ping Report`)
+      .setTitle(`Collei Bot v3 Ping Report`)
       .setDescription(
         `**Bot Latency:** ${Date.now() - message.createdTimestamp
         }ms. \n**API Latency:** ${this.client.ws.ping}ms.
         `
       )
-      .setFooter({ text: "Pyro Archon Mains" })
+      .setFooter({ text: "Sumeru Akademiya" })
       .setTimestamp();
 
     message.reply({
