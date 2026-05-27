@@ -151,7 +151,7 @@ class TaskManager {
                         await member.roles.remove(role);
                         const channel = guild.channels.cache.get(task.channelId);
                         if (channel) {
-                            channel.send(`Happy Birthday ${member.displayName}! Your birthday role has been removed.`);
+                            channel.send({ content: `Happy Birthday ${member.displayName}! Your birthday role has been removed.`, allowedMentions: { parse: [] } });
                         }
                         logSuccess(`${member.displayName}'s birthday role has been removed.`);
                     }

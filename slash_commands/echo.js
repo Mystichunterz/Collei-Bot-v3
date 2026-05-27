@@ -30,8 +30,9 @@ class Echo extends SlashCommand {
 
     async run(client, interaction) {
         const messageToEcho = interaction.options.getString('message');
-        await interaction.reply({ content: 'Echoing back: ' + messageToEcho, ephemeral: true });
-        await interaction.channel.send(messageToEcho);
+        await interaction.reply({ content: 'Echoing back: ' + messageToEcho, ephemeral: true, allowedMentions: { parse: [] } });
+        // EXIT sink: echoes raw user input into a public message — never let it parse any mention.
+        await interaction.channel.send({ content: messageToEcho, allowedMentions: { parse: [] } });
     }
 }
 

@@ -37,6 +37,9 @@ const client = new Bot({
     ],
     prefix: prefixConfig,
     partials: [Partials.Message, Partials.Channel, Partials.Reaction],
+    // Block reflected @everyone/@here mass-pings globally, while still allowing
+    // intended user/role mentions (welcomes, LOTD role ping, etc.) to work.
+    allowedMentions: { parse: ['users', 'roles'] },
 });
 
 client.start(process.env.TOKEN);

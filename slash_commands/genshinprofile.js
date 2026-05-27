@@ -60,7 +60,8 @@ class GenshinProfile extends SlashCommand {
                 `**Achievements:** ${playerInfo.finishAchievementNum ?? '0'}\n` +
                 `**Spiral Abyss:** Floor ${playerInfo.towerFloorIndex ?? 'N/A'}, Level ${playerInfo.towerLevelIndex ?? 'N/A'}`;
 
-            await interaction.editReply({ content: replyContent });
+            // Genshin nickname/signature are attacker-controlled; never let them ping.
+            await interaction.editReply({ content: replyContent, allowedMentions: { parse: [] } });
         } catch (error) {
             console.error('Error fetching data from Genshin Impact API:', error);
             await interaction.editReply({ content: 'Failed to fetch data from Genshin Impact API. Please contact mystichunterz for assistance.', ephemeral: true });

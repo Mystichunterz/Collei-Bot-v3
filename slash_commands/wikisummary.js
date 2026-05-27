@@ -44,7 +44,7 @@ class WikiSummary extends SlashCommand {
 
             // Send only the first few lines or the first paragraph from the summary
             const summary = data.extract.split('\n').slice(0, 2).join('\n');
-            await interaction.reply({ content: `**${data.title}**\n${summary}` });
+            await interaction.reply({ content: `**${data.title}**\n${summary}`, allowedMentions: { parse: [] } });
         } catch (error) {
             await interaction.reply({ content: 'Failed to fetch Wikipedia data.', ephemeral: true });
             console.error('Error fetching Wikipedia data:', error);
