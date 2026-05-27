@@ -1,3 +1,10 @@
+import permissionConfig from "../../config/permission_config.js";
+
+// Staff/privileged role IDs that must never be self-assignable via the role buttons.
+const privilegedRoleIds = new Set(
+  permissionConfig.permissionLevels.flatMap((level) => level.role_ids)
+);
+
 const boosterColourRoles = [
   "969890981182849105",
   "969891212653908008",
@@ -46,6 +53,14 @@ class RoleButton {
   async run(client, interaction, parameters) {
     try {
       const roleId = parameters[0];
+
+      // Defence-in-depth: refuse to ever self-assign a privileged/staff role.
+      if (privilegedRoleIds.has(roleId)) {
+        return interaction.reply({
+          content: "That role isn't self-assignable.",
+          ephemeral: true,
+        });
+      }
 
       const role = await interaction.guild.roles.fetch(roleId);
       if (!role)
